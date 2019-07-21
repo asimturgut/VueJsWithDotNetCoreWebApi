@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firs Step With Vue.js</title>
+</head>
+
+<body>
+        
+        <div id="app">
+        <button v-on:click="buttonClick(2)">Click And Increase</button>
+        <button v-on:click="counter++">Increase other way</button>
+                <p>{{counter}}</p>
+                <p v-on:mousemove="updateCoordinate('asim 61',$event)">Coordinates: {{x}} -- {{y}}
+
+                        <span  v-on:mousemove.stop="">Stop :) </span>
+                </p>
+
+                <input type="text" v-on:keyup.enter="alertMe">
+         </div>
+</body>
+
+</html>
+
+<script src="../vue.js"></script>
+<script src="index.js"></script>

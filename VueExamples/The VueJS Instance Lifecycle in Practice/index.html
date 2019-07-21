@@ -1,0 +1,10 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app1">
+  <h1 ref="heading">{{ title }}</h1>
+  <button v-on:click="destroyVue" ref="myButton">Destroy</button>
+
+  <button @click="title='Asim :) '">Update Title</button>
+
+</div>
+<script src="app.js"></script>

@@ -1,0 +1,32 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app1">
+  <h1 ref="heading">{{ title }}</h1>
+  <button v-on:click="show" ref="myButton">Show Paragraph</button>
+  <p v-if="showParagraph">This is not always visible</p>
+
+  <p>
+
+      when you didnt set el element vue constructure
+      you can set with mount method like below ;
+      <b>
+          vm1.$mount("#app1");
+      </b>
+    </p>
+    
+
+</div>
+<div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="onChange">Change Something in Vue 1</button>
+    <button v-on:click="show">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+  <hello></hello>
+  <hello></hello>
+  <hello></hello>
+  </div>
+
+  <div id="app3">
+
+  </div>
+<script src="app.js"></script>

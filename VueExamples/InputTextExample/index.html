@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firs Step With Vue.js</title>
+</head>
+
+<body>
+        
+        <div id="app">
+        <h1 v-once>{{title}} only one time rendered because we use v-once attribute</h1>
+        <input type="text" v-on:input="changeTitle">
+            <div>
+                    <p>{{title}}</p>
+            </div>
+            <div>
+                    <p>{{content}}</p>
+            </div>
+
+            <div>
+                <p>{{sayHello()}} say hello method called content equal title :) </p>
+            </div>
+            <div>
+                <p>{{getTitle()}}</p>
+            </div>
+            <div>
+                <a v-bind:href="link"> Clik To Google </a>
+            </div>
+                
+         </div>
+</body>
+
+</html>
+
+<script src="../vue.js"></script>
+<script src="index.js"></script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firs Step With Vue.js</title>
+</head>
+
+<body>
+        
+        <div id="app">
+        <div class="demo" @click="attachedRed=!attachedRed" :class="{red: attachedRed}"></div>
+        <div class="demo"></div>
+        <div class="demo" :class="divClass"></div>
+        <div class="demo" :class="color"></div>
+        <div class="demo" :style="{backgroundColor: color}"></div>
+
+        <hr>
+        <input type="text" v-model="color">
+         
+
+</div>
+</body>
+
+</html>
+
+<script src="../vue.js"></script>
+<script src="index.js"></script>
+<link rel="stylesheet" href="app.css">
